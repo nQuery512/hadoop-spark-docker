@@ -66,6 +66,17 @@ services:
     volumes:
        - /mnt/spark-apps:/opt/spark-apps
        - /mnt/spark-data:/opt/spark-data
+
+    
+    
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook     
+    container_name: pyspark_notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - /home/ubuntu/hadoop-spark-docker/work:/home/jovyan/work  
+    
 networks:
   spark-network:
     driver: bridge
