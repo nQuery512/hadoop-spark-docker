@@ -75,7 +75,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - /home/ubuntu/hadoop-spark-docker/work:/home/jovyan/work  
+      - ./work:/home/jovyan/work  
     
 networks:
   spark-network:
