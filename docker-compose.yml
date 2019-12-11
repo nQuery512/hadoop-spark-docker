@@ -25,8 +25,8 @@ services:
        - ./data:/opt/spark-data
   
   pyspark-notebook:
-    image: jupyter/pyspark-notebook-updated     
-    container_name: pyspark_notebook-updated
+    image: pyspark-notebook:latest     
+    container_name: pyspark_notebook
     ports:
       - "8888:8888"
     volumes:
