@@ -7,5 +7,3 @@ ENV PATH /opt/conda/envs/py35/bin:$PATH
 RUN /bin/bash -c "source activate py35"
 
 RUN python -m ipykernel install --user --name py35 --display-name "Python 3.5 pour Spark"
-
-RUN echo BITE2
